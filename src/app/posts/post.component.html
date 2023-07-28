@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Posts</th>
+    <th>AUthor Id</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let post of postList">
+    <td>{{post.id}}</td>
+    <td>{{post.author}}</td>
+    <td>{{post.title}}</td>
+    <td>
+      <a href="javascript:void(0)" (click)="Switch(post.id)">VIEW</a>
+    </td>
+  </tr>
+</table>

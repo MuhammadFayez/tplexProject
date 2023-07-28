@@ -1,0 +1,22 @@
+<div>
+  <h1>Read Post</h1>
+
+  <strong *ngIf="singlepost">
+    post title :
+      <p style="display: inline-block;">
+        {{singlepost.title}}
+      </p>
+  </strong>
+
+  <div class="com-container">
+
+    <h2>Commnets :</h2>
+
+      <ul *ngIf="postComments">
+        <li  *ngFor="let comment of postComments">
+              {{comment.body}}
+        </li>
+      </ul>
+  </div>
+
+</div>
